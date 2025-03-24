@@ -27,7 +27,7 @@ int main(){
 	{
         .sin_family = AF_INET,
         .sin_port = htons(9999),
-        .sin_addr.s_addr = inet_addr("10.0.2.48")  // Server IP
+        .sin_addr.s_addr = inet_addr("127.0.0.1")
     };
 
 	connect(socketf, (const struct sockaddr *)&address, sizeof(address));
